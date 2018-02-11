@@ -1,0 +1,560 @@
+/* ######################################################################### */
+/* BASIC STRUCTURE CSS RULES */
+/* Base structure */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    /* height: 100%; */
+    background-color: #f7f1e3;
+}
+
+body {
+    color: #f7f1e3;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    /* margin:0; */
+    /* text-transform: uppercase; */
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+hr{
+    max-width: 50%;
+    background-color: #862121;
+    text-align: center;
+    position: relative;
+    /* padding: 10px; */
+}
+
+/* Links */
+
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritence from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+/* END OF BASIC STRUCTURE CSS RULES*/
+/* ######################################################################### */
+
+
+/* ######################################################################### */
+/* HOME-COVER PAGE CSS RULES */
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+
+.site-wrapper {
+    display: table;
+    padding-top: 50px;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    /*height: 100%; */
+    /*min-height: 100%;*/
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+}
+
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 0 20px;
+}
+
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+
+  /* Start the vertical centering */
+    .site-wrapper-inner {
+        vertical-align: middle;
+    }
+}
+/* END OF COVER PAGE THAT I TOOK FROM https://codepen.io/viktorsnt/pen/OPramY */
+/* ######################################################################### */
+
+/* ========================================================================== */
+/* BEGINNING OF ABOUT CUSTOM CSS RULES # about - (_site-layout.scss) */
+
+.s-about {
+    padding-top: 18rem;
+    /* padding-bottom: 9rem;  */
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.about-content {
+    /* margin-bottom: 3rem; */
+}
+
+.about-content .left {
+    padding-right: 40px;
+}
+
+.about-content .right {
+    padding-left: 40px;
+}
+
+.narrow {
+    max-width: 800px;
+    position: fixed; /* or absolute */
+    top: 50%;
+    bottom: 50%;
+    right: 50%;    
+    left: 50%;
+    /* bring your own prefixes */
+    /* transform: translate(-50%, -50%); */
+}
+
+/* ------------------------------------------------------------------- 
+ * ## section intro - (_common-styles.scss)
+ * ------------------------------------------------------------------- */
+
+ .section-intro {
+    text-align: center;
+    position: relative;
+}
+
+.section-intro h1 {
+    font-family: "librebaskerville-bold", serif;
+    font-size: 3rem;
+    line-height: 1.375;
+    /* margin-top: 0; */
+}
+
+.section-intro h3 {
+    font-family: "montserrat-semibold", sans-serif;
+    font-size: 2rem;
+    color: #862121;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 100px;
+}
+
+.section-intro.has-bottom-sep {
+    /* padding-bottom: 1.5rem; */
+    position: relative;
+}
+
+
+.section-intro.has-bottom-sep::after {
+    display: inline-block;
+    height: 1px;
+    width: 240px;
+    background-color: black;
+    text-align: center;
+}
+
+.leandros {
+    color: white;
+}
+
+ul.nav a:hover { background-color: #3498db !important;}
+
+.navbar-nav > li.navbar-right {
+    float: right !important;
+}
+
+/* END OF ABOUT SETION CUSTOM CSS RULES
+========================================================================*/
+
+/* ======================================================================== */
+/* BEGINNING OF CUSTOM BUTTON CSS RULES */
+/* common-btn */
+
+.btn{
+    border: 0;
+    border-bottom: 3px solid;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 28px;
+    padding: 9px 22px;
+}
+
+/*large-btn*/
+.btn-lg, 
+.btn-group-lg>.btn {
+    padding: 14px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/*btn-primary*/
+.btn-primary{
+    background-color:#68c3a3;
+    border-color: rgba(51, 51, 51, 0.15);
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary.focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #4eb28f;
+    border-color: #4eb28f;
+}
+
+/*btn-info*/
+.btn-info{
+    background-color:#52b3d9;
+    border-color: rgba(51, 51, 51, 0.15);
+}
+
+.btn-info:hover, 
+.btn-info:focus, 
+.btn-info.focus, 
+.btn-info:active, 
+.btn-info.active, 
+.open>.dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: #4aa0c2;
+    border-color: #4aa0c2;
+}
+
+/*btn-default*/
+.btn-default {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default.focus, 
+.btn-default:active, 
+.btn-default.active{
+    color: #68c3a3;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* ======================================================================== */
+/* ======================================================================== */
+
+/* === About Section === */
+.short-info {
+    margin-bottom: 40px;
+}
+
+.short-info h3 {
+    margin-bottom: 30px;
+}
+
+.short-info ul {
+    margin-top: 10px;
+    display:inline-block;
+}
+.short-info ul li {
+    width: 50%;
+    float: left;
+}
+
+#home {min-height:100vh;}
+#about {padding-top:50px;min-height:100vh;color: black; background-color: #f7f1e3;}
+#education {padding-top:50px;min-height:100vh;color: black; background-color: #f7f1e3;}
+#skills {padding-top:50px;min-height:100vh;}
+#projects {padding-top:50px;min-height:100vh;color: black; background-color: #f7f1e3;}
+#contact {padding-top:50px;min-height:100vh;color: black; background-color: #f7f1e3;background-image: url(leo.jpg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        }
+        
+
+/* ############################################################# */
+/* BEGINNING OF TIMELINE CUSTOM CSS RULES */
+
+.timeline {
+    list-style: none;
+    padding: 10px 0 10px;
+    position: relative;
+}
+
+.timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #862121;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+.timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li:before,
+.timeline > li:after {
+    content: " ";
+    display: table;
+}
+
+.timeline > li:after {
+    clear: both;
+}
+
+.timeline > li > .timeline-panel {
+    background-color: #fff;
+    width: 46%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline > li > .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #999999;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+.timeline-badge.primary {
+    background-color: #2e6da4 !important;
+}
+
+.timeline-badge.success {
+    background-color: #3f903f !important;
+}
+
+.timeline-badge.warning {
+    background-color: #f0ad4e !important;
+}
+
+.timeline-badge.danger {
+    background-color: #d9534f !important;
+}
+
+.timeline-badge.info {
+    background-color: #5bc0de !important;
+}
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+
+.timeline-body > p,
+.timeline-body > ul {
+    margin-bottom: 0;
+}
+
+.timeline-body > p {
+    text-align: left;
+}
+
+
+.timeline-body > p + p {
+    margin-top: 5px;
+}
+
+@media (max-width: 767px) {
+    ul.timeline:before {
+        left: 40px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        width: calc(100% - 90px);
+        width: -moz-calc(100% - 90px);
+        width: -webkit-calc(100% - 90px);
+    }
+
+    ul.timeline > li > .timeline-badge {
+        left: 15px;
+        margin-left: 0;
+        top: 16px;
+    }
+
+    ul.timeline > li > .timeline-panel {
+        float: right;
+    }
+
+    ul.timeline > li > .timeline-panel:before {
+        border-left-width: 0;
+        border-right-width: 15px;
+        left: -15px;
+        right: auto;
+    }
+
+    ul.timeline > li > .timeline-panel:after {
+        border-left-width: 0;
+        border-right-width: 14px;
+        left: -14px;
+        right: auto;
+    }
+}
+
+
+.album {
+    /* padding-top: 3rem; */
+    /* padding-bottom: 3rem; */
+    background-color: #f7f1e3;
+  }
+  
+  .card {
+    float: left;
+    width: 33.333%;
+    padding: .75rem;
+    /* margin-bottom: 2rem; */
+    border: 0;
+    background-color: #f7f1e3;    
+  }
+  
+  .card > img {
+    margin-bottom: .75rem;
+  }
+  
+  .card-text {
+    font-size: 85%;
+  }
+  
+  
+  footer p {
+    margin-bottom: .25rem;
+  }
+  
+
+  .page-header {
+    padding-top: 20px;
+  }
